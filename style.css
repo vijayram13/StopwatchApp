@@ -1,0 +1,125 @@
+body {
+
+    background-color: rgba(192, 218, 209, 0.707);
+
+}
+
+.container h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bd9547;
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    border-radius: 20px;
+}
+
+/* main container after body */
+.container {
+    /* height width of the box */
+    width: 350px;
+    height: 500px;
+
+    /* to center the box */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* border styling */
+    border: 2px ridge;
+    border-color: #dae02f;
+    border-radius: 30px;
+
+    /* background color  and shadow*/
+    background: #e0e0e0;
+
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 15px 15px 30px #bebebe,
+        -15px -15px 30px #ffffff;
+    /* to align the text */
+    text-align: center;
+
+}
+
+/* to centerized the circle in the box*/
+.stopwatch {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* to make circle */
+.stopwatch h2 {
+    /* circle */
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    /* to center the circle*/
+    display: grid;
+    place-items: center;
+    /* background-color and shadow*/
+    background-color: #73aba0;
+    box-shadow: -35px 35px 50px #486c65,
+        35px -35px 70px #9eeadb;
+}
+
+/* counter style 00:00:00 */
+#time {
+    color: #f3f2ef;
+
+    text-shadow:
+        -8px -8px 12px rgba(255, 255, 255, 0.4),
+        8px 8px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* to center the buttons */
+.controls {
+    margin-top: 30px;
+    padding: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #b0d6d2;
+
+
+}
+
+/* button styling */
+.btn {
+    color: #090909;
+    border: 20px ridge #dae02f;
+    padding: 0.7em 1.7em;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+    border-radius: 0.5em;
+    background: #e0e0e0;
+    border: 1px solid #e8e8e8;
+    color: #bd9547;
+    box-shadow: 6px -6px 8px #c5c5c5,
+        6px -6px 8px #ffffff;
+
+    /* to change the cursor when cursor move to the button */
+    cursor: pointer;
+
+}
+
+/* button click effect */
+.btn:active {
+    color: red;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+        inset -4px -4px 12px #ffffff;
+}
+
+/* hover effect */
+.btn:hover {
+    color: red;
+
+}
